@@ -11,5 +11,8 @@ function callback(token)
   };
   let dataJson = JSON.stringify(data);
 
+  console.clear();
+  console.log("BEFORE SEND_DATA", dataJson);
   window.Telegram.WebApp.sendData(dataJson);
+  console.log("AFTER SEND_DATA", dataJson);
 }
